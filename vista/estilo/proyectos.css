@@ -1,0 +1,33 @@
+/* Página de proyectos FaMi */
+.proyectos-hero{position:relative;min-height:610px;padding:90px 8% 105px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:55px;overflow:hidden}
+.proyectos-hero-texto{position:relative;z-index:2;max-width:650px}
+.proyectos-etiqueta,.seccion-kicker{display:inline-flex;align-items:center;gap:10px;color:#ff70d2;font-size:.76rem;font-weight:700;letter-spacing:2px}
+.proyectos-etiqueta i{width:8px;height:8px;border-radius:50%;background:#00d9ff;box-shadow:0 0 14px #00d9ff}
+.proyectos-hero h1{font-size:clamp(3.5rem,7vw,6.4rem);line-height:.98;letter-spacing:-3px;margin:28px 0}
+.proyectos-hero h1 span,.proyectos-intro h2 span,.proyectos-cierre h2 span{background:linear-gradient(90deg,#ff00aa,#a34bff,#00d9ff);background-clip:text;-webkit-background-clip:text;color:transparent}
+.proyectos-hero-texto>p{max-width:520px;color:#c6c3d0;font-size:1.08rem;line-height:1.8;margin-bottom:32px}
+.proyectos-cta{display:inline-flex;align-items:center;gap:30px;padding:15px 22px;border:1px solid rgba(255,0,170,.65);border-radius:7px;color:#fff;text-decoration:none;font-weight:600;background:linear-gradient(110deg,rgba(255,0,170,.17),rgba(138,43,226,.13));transition:.3s}
+.proyectos-cta span{font-size:1.35rem;color:#00d9ff}.proyectos-cta:hover{transform:translateY(-4px);box-shadow:0 10px 35px rgba(255,0,170,.22);border-color:#00d9ff}
+.proyectos-hero-visual{position:relative;min-height:420px;display:grid;place-items:center}
+.proyectos-hero-visual>img{position:relative;z-index:1;width:min(100%,530px);height:360px;object-fit:cover;border-radius:18px;border:1px solid rgba(255,255,255,.16);box-shadow:0 20px 80px rgba(0,0,0,.5),0 0 45px rgba(138,43,226,.22);transform:rotate(2deg)}
+.visual-orbita{position:absolute;border:1px solid rgba(255,0,170,.35);border-radius:50%;width:420px;height:420px}.orbita-2{width:500px;height:500px;border-color:rgba(0,217,255,.2)}
+.visual-tag{position:absolute;z-index:2;padding:9px 13px;background:rgba(10,8,20,.86);border:1px solid rgba(255,255,255,.16);border-radius:5px;font-size:.65rem;letter-spacing:1.5px;color:#fff;backdrop-filter:blur(10px)}
+.tag-top{top:32px;right:0}.tag-bottom{bottom:26px;left:0;color:#70eaff}
+.hero-indice{position:absolute;bottom:35px;left:8%;font-size:.72rem;letter-spacing:3px;color:#aaa}.hero-indice span{color:#ff00aa;margin:0 8px}
+.proyectos-intro{padding:75px 8% 45px;display:flex;justify-content:space-between;align-items:end;gap:40px}.proyectos-intro h2{font-size:clamp(2.2rem,4vw,3.7rem);line-height:1.08;margin-top:18px;letter-spacing:-1.5px}.proyectos-intro>p{max-width:420px;color:#aaa6b8;line-height:1.8;margin-bottom:5px}
+.proyectos-grid{padding:30px 8% 110px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:45px 28px}
+.proyecto-card{min-width:0}.proyecto-destacado{grid-column:1/-1}.proyecto-imagen{position:relative;overflow:hidden;border-radius:13px;background:#141020;border:1px solid rgba(255,255,255,.1);height:300px}.proyecto-destacado .proyecto-imagen{height:440px}
+.proyecto-imagen:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(5,4,12,.65));pointer-events:none}
+.proyecto-imagen img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s}.proyecto-card:hover .proyecto-imagen img{transform:scale(1.055);filter:saturate(1.15)}
+.proyecto-numero{position:absolute;z-index:2;top:18px;left:18px;padding:8px 11px;border-radius:4px;background:rgba(8,7,15,.75);backdrop-filter:blur(8px);font-size:.65rem;letter-spacing:1.5px;color:#fff}
+.proyecto-flecha{position:absolute;z-index:2;right:20px;bottom:17px;width:43px;height:43px;display:grid;place-items:center;border-radius:50%;background:linear-gradient(135deg,#ff00aa,#7138dc);font-size:1.3rem;color:#fff}
+.proyecto-info{padding:22px 3px 0;display:flex;justify-content:space-between;gap:25px}.proyecto-info>div{flex:1}.proyecto-tipo{font-size:.65rem;letter-spacing:1.6px;color:#00d9ff;font-weight:700}.proyecto-info h3{font-size:1.45rem;margin-top:9px}.proyecto-info p{max-width:310px;color:#aaa6b8;font-size:.92rem;line-height:1.7}
+.proyectos-cierre{position:relative;overflow:hidden;text-align:center;padding:100px 20px 110px;background:linear-gradient(120deg,rgba(255,0,170,.08),rgba(138,43,226,.13),rgba(0,217,255,.06));border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08)}
+.proyectos-cierre h2{position:relative;z-index:1;font-size:clamp(2.7rem,5.5vw,5rem);line-height:1.05;margin:20px 0 30px;letter-spacing:-2px}.proyectos-cierre .proyectos-cta{position:relative;z-index:1}.cierre-brillo{position:absolute;width:400px;height:400px;border-radius:50%;background:#a000ff;filter:blur(150px);opacity:.16;left:calc(50% - 200px);top:20px}
+.proyectos-footer{padding:28px 8%;display:flex;justify-content:space-between;gap:20px;color:#898596;font-size:.82rem}.proyectos-footer a{color:#ff70d2;text-decoration:none}
+.menu a.activo{color:#ff70d2}
+@media(max-width:900px){.proyectos-hero{grid-template-columns:1fr;padding-top:70px;gap:20px}.proyectos-hero-visual{min-height:350px}.proyectos-hero-visual>img{height:310px}.visual-orbita{width:340px;height:340px}.orbita-2{width:390px;height:390px}.proyectos-intro{align-items:start;flex-direction:column}.proyecto-info{flex-direction:column;gap:10px}.proyecto-info p{max-width:600px}}
+@media(max-width:600px){.header{padding:18px 5%;flex-direction:column;gap:16px}.logo img{width:170px}.menu{gap:13px;flex-wrap:wrap;justify-content:center}.menu a{font-size:.82rem}.proyectos-hero{padding:55px 6% 80px;min-height:auto}.proyectos-hero h1{letter-spacing:-1.5px}.proyectos-hero-texto>p{font-size:.98rem}.proyectos-hero-visual{min-height:270px}.proyectos-hero-visual>img{height:230px}.visual-orbita{width:260px;height:260px}.orbita-2{width:300px;height:300px}.tag-top{right:-3px;top:10px}.tag-bottom{bottom:5px}.hero-indice{left:6%;bottom:25px}.proyectos-intro{padding:55px 6% 25px}.proyectos-grid{padding:20px 6% 75px;grid-template-columns:1fr;gap:35px}.proyecto-destacado{grid-column:auto}.proyecto-imagen,.proyecto-destacado .proyecto-imagen{height:260px}.proyecto-info h3{font-size:1.25rem}.proyectos-cierre{padding:75px 6%}.proyectos-footer{padding:24px 6%;flex-direction:column;text-align:center;gap:9px}}
+
+/* Proyecto destacado: imagen de realidad aumentada sin la maqueta organizacional */
+.proyecto-destacado .proyecto-imagen img{object-fit:cover;object-position:center;}
